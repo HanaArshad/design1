@@ -11,6 +11,7 @@
 
 
   OTHER OPTION TO RUN
-  1. Rick click on index.html
-  2. open live server
+  1. Right click on index.html
+  2. Open live server
+  3. It should open a link on your Safari or Chrome
      
