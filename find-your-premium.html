@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./find-your-premium.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inria Serif:wght@700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="find-your-premium">
+      <img
+        class="image-6-icon1"
+        alt=""
+        src="./public/image-5@2x.png"
+        id="image6"
+      />
+
+      <div class="find-your-premium-inner">
+        <div class="rectangle-container">
+          <div class="group-child2"></div>
+        </div>
+      </div>
+      <div class="find-your-premium-child">
+        <div class="group-frame">
+          <div class="group-frame">
+            <div class="group-frame">
+              <div class="group-frame">
+                <div class="contact-us-email-container1">
+                  <p class="contact-us1">CONTACT US</p>
+                  <p class="contact-us1">&nbsp;</p>
+                  <p class="contact-us1">EMAIL: XXX</p>
+                  <p class="contact-us1">PHONE: +61 XXXXXXXXX</p>
+                  <p class="contact-us1">&nbsp;</p>
+                  <p class="contact-us1">ADDRESS:</p>
+                  <p class="contact-us1">&nbsp;</p>
+                  <p class="contact-us1">XX STREET, XYZ</p>
+                  <p class="contact-us1">SYDNEY, NSW 0000</p>
+                  <p class="contact-us1">AUSTRALIA</p>
+                </div>
+                <div class="products-prod1-prod2-container1">
+                  <p class="contact-us1">PRODUCTS:</p>
+                  <p class="contact-us1">&nbsp;</p>
+                  <p class="contact-us1">PROD1</p>
+                  <p class="contact-us1">PROD2</p>
+                  <p class="contact-us1">PROD3</p>
+                  <p class="contact-us1">PROD4</p>
+                  <p class="contact-us1">PROD5</p>
+                </div>
+                <div class="data-visualisation-graphs-container1">
+                  <p class="contact-us1">DATA VISUALISATION</p>
+                  <p class="contact-us1">&nbsp;</p>
+                  <p class="contact-us1">GRAPHS</p>
+                  <p class="contact-us1">FORMSPOWERBI</p>
+                  <p class="contact-us1">XXXX</p>
+                  <p class="contact-us1">YYY</p>
+                  <p class="contact-us1">ZZZ</p>
+                </div>
+                <div class="resources-r1-r2-container1">
+                  <p class="contact-us1">RESOURCES</p>
+                  <p class="contact-us1">&nbsp;</p>
+                  <p class="contact-us1">R1</p>
+                  <p class="contact-us1">R2</p>
+                  <p class="contact-us1">R3</p>
+                  <p class="contact-us1">R4</p>
+                  <p class="contact-us1">R5</p>
+                </div>
+                <img class="rectangle-icon" alt="" />
+
+                <div class="cybersecurity-aaa-bbb-ccc-xxx1">
+                  <p class="contact-us1">CYBERSECURITY</p>
+                  <p class="contact-us1">&nbsp;</p>
+                  <p class="contact-us1">AAA</p>
+                  <p class="contact-us1">BBB</p>
+                  <p class="contact-us1">CCC</p>
+                  <p class="contact-us1">XXX</p>
+                  <p class="contact-us1">YYY</p>
+                  <p class="contact-us1">ZZZ</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="rectangle-parent1">
+        <div class="group-child3"></div>
+        <div class="group-parent1">
+          <button class="sign-in-group" id="groupButton">
+            <div class="sign-in3" id="sIGNINContainer">
+              <div class="sign-in4" id="sIGNINText">Profile</div>
+            </div>
+            <img class="ggprofile-icon1" alt="" src="./public/ggprofile.svg" />
+          </button>
+          <button class="data-insights1" id="dataInsights">
+            Data Insights
+          </button>
+          <button class="questionnaire1" id="questionnaire">
+            Questionnaire
+          </button>
+          <button class="premium-plan1" id="premiumPlan">Premium Plan</button>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var image6 = document.getElementById("image6");
+      if (image6) {
+        image6.addEventListener("click", function (e) {
+          window.location.href = "./landing-page.html";
+        });
+      }
+      
+      var sIGNINText = document.getElementById("sIGNINText");
+      if (sIGNINText) {
+        sIGNINText.addEventListener("click", function (e) {
+          window.location.href = "./sign-in-page.html";
+        });
+      }
+      
+      var sIGNINContainer = document.getElementById("sIGNINContainer");
+      if (sIGNINContainer) {
+        sIGNINContainer.addEventListener("click", function (e) {
+          window.location.href = "./sign-in-page.html";
+        });
+      }
+      
+      var groupButton = document.getElementById("groupButton");
+      if (groupButton) {
+        groupButton.addEventListener("click", function (e) {
+          window.location.href = "./index.html";
+        });
+      }
+      
+      var dataInsights = document.getElementById("dataInsights");
+      if (dataInsights) {
+        dataInsights.addEventListener("click", function (e) {
+          window.location.href = "./data-insights.html";
+        });
+      }
+      
+      var questionnaire = document.getElementById("questionnaire");
+      if (questionnaire) {
+        questionnaire.addEventListener("click", function (e) {
+          window.location.href = "./questionnaraire.html";
+        });
+      }
+      
+      var premiumPlan = document.getElementById("premiumPlan");
+      if (premiumPlan) {
+        premiumPlan.addEventListener("click", function (e) {
+          window.location.href = "./find-your-premium.html";
+        });
+      }
+      </script>
+  </body>
+</html>

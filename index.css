@@ -1,0 +1,145 @@
+.sign-in-page-child {
+  position: absolute;
+  top: 335px;
+  left: 260px;
+  background-color: rgba(217, 217, 217, 0.11);
+  width: 840px;
+  height: 975px;
+}
+.sign-in-page-item {
+  border: 0;
+  outline: 0;
+  background-color: #ebf2fb;
+  position: absolute;
+  top: 899px;
+  left: 357px;
+  width: 626px;
+  height: 145px;
+}
+.image-6-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 468px;
+  height: 146px;
+  object-fit: cover;
+}
+.enter-your-credentials,
+.welcome-back {
+  position: absolute;
+  top: 381px;
+  left: 295px;
+  display: inline-block;
+  width: 768px;
+  height: 114px;
+}
+.enter-your-credentials {
+  top: 541px;
+  left: 368px;
+  font-size: var(--font-size-21xl);
+  text-align: left;
+  width: 593px;
+  height: 49px;
+}
+.email-address,
+.rectangle-div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #ebf1fb;
+  width: 626px;
+  height: 146px;
+}
+.email-address {
+  border: 0;
+  outline: 0;
+  display: inline-block;
+  font-family: var(--font-inria-serif);
+  font-size: var(--font-size-21xl);
+  background-color: transparent;
+  top: 43px;
+  font-weight: 700;
+  color: var(--color-black);
+  text-align: left;
+  width: 619px;
+  height: 66px;
+}
+.rectangle-group {
+  position: absolute;
+  top: 670px;
+  left: 357px;
+  width: 626px;
+  height: 146px;
+}
+.password,
+.password-wrapper {
+  position: absolute;
+  width: 612px;
+  height: 64px;
+}
+.password {
+  border: 0;
+  outline: 0;
+  display: inline-block;
+  font-family: var(--font-inria-serif);
+  font-size: var(--font-size-21xl);
+  background-color: transparent;
+  top: 0;
+  left: 0;
+  font-weight: 700;
+  color: var(--color-black);
+  text-align: left;
+}
+.password-wrapper {
+  top: 942px;
+  left: 360px;
+}
+.group-child1,
+.sign-in-page-inner {
+  position: absolute;
+  width: 288px;
+  height: 86px;
+}
+.group-child1 {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: var(--color-black);
+  top: 0;
+  left: 0;
+}
+.sign-in-page-inner {
+  top: 1167px;
+  left: 377px;
+}
+.sign-in-page,
+.sign-in2 {
+  font-family: var(--font-inria-serif);
+}
+.sign-in2 {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  top: 1186px;
+  left: 414px;
+  font-size: var(--font-size-21xl);
+  font-weight: 700;
+  color: #fcfcfc;
+  text-align: left;
+  display: inline-block;
+  width: 155px;
+  height: 44px;
+}
+.sign-in-page {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-white);
+  height: 1751px;
+  overflow: hidden;
+  mix-blend-mode: normal;
+  text-align: center;
+  font-size: 96px;
+  color: var(--color-black);
+}
