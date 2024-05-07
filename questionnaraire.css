@@ -199,9 +199,94 @@
   font-family: var(--font-inter);
 }
 
-.iframe {
-  width: 80%;       /* Set width to 80% of its container */
-  height: 100px;    /* Set height to 600px or any desired value */
-  display: block;   /* Make the iframe block-level */
-  margin: 20px auto; /* Center the iframe horizontally with a top margin of 20px */
+
+
+/* Resetting default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+}
+
+/* Heading styles */
+h2 {
+  margin-bottom: 20px;
+  color: #333;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 20px;
+ 
+}
+
+
+/* Form styles */
+form {
+  display: grid;
+  background-color: #f2efef; /* Grey background */
+  padding: 50px 20px; /* Increase the padding for the grey box */
+  border-radius: 10px; /* Rounded corners */
+  min-height: 900vh; /* Adjust the minimum height as needed */
+  margin-left: 50vh;
+}
+
+/* Label styles */
+label {
+  font-weight: bold;
+}
+
+/* Input styles */
+input[type="text"],
+input[type="number"],
+textarea,
+select {
+  width: 100%;
+  padding: 12px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+/* Select styles */
+select {
+  height: 40px; /* Adjust the height as needed */
+}
+
+/* Submit button styles */
+input[type="submit"] {
+  background-color: var(--color-indianred-100); /* Change the font color to black */
+
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Submit button hover effect */
+input[type="submit"]:hover {
+  background-color: var(--color-indianred-100); /* Change the font color to black */
+}
+
+.container {
+  height: 205vh; /* Adjust the height as needed */
+  overflow-y: auto; /* Enable vertical scrolling */
+  margin-top: 18vh; /* Adjust top margin */
+  width: 140vh;
+  display: flex; /* Use flexbox */
+  justify-content: center; /* Center horizontally */
+}
+
+/* Targeting the labels for the questions */
+form label {
+  color: var(--color-gray-200); /* Change the font color to black */
+  font-size: 15px;
+  font-family: "Inria Serif";
+}
+h1 {
+  color: #333;
 }

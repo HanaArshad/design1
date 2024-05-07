@@ -18,7 +18,307 @@
   <body>
     
     <div class="questionnaraire">
-      <iframe src="https://app.weavely.ai/forms/806ca33c-30ba-4670-9442-c308fc150732" style="border: none; width: 100%; height: 85%; margin-top: 100px;"></iframe>  
+      <div class="container">
+      
+            <form action="submit_questionnaire.php" method="post">
+              <h1>Data Security Questionnaire</h1>
+                <!-- Organisation Information -->
+                <h2>Organisation Information</h2>
+                <label for="orgName">Name of Organization:</label>
+                <input type="text" id="orgName" name="orgName" required><br><br>
+    
+                <label for="industrySector">Industry Sector:</label>
+                <input type="text" id="industrySector" name="industrySector" required><br><br>
+    
+                <label for="numEmployees">Number of Employees:</label>
+                <input type="number" id="numEmployees" name="numEmployees" required><br><br>
+    
+                <label for="annualRevenue">Annual Revenue:</label>
+                <input type="text" id="annualRevenue" name="annualRevenue" required><br><br>
+    
+                <label for="dataAssets">Description of Data Assets:</label>
+                <textarea id="dataAssets" name="dataAssets" required></textarea><br><br>
+    
+                <!-- Current Security Measures -->
+                <h2>Current Security Measures</h2>
+                <label for="itSecurityTeam">Does your organisation have a dedicated IT security team?</label>
+                <select id="itSecurityTeam" name="itSecurityTeam" required>
+                    <option value="">Select</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select><br><br>
+    
+                <label for="cybersecurityMeasures">What cybersecurity measures are currently in place?</label>
+                <textarea id="cybersecurityMeasures" name="cybersecurityMeasures" required></textarea><br><br>
+    
+                <label for="securityAudits">Are regular security audits conducted?</label>
+                <select id="securityAudits" name="securityAudits" required>
+                    <option value="">Select</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select><br><br>
+    
+                <label for="employeeTraining">Do employees receive cybersecurity training?</label>
+                <select id="employeeTraining" name="employeeTraining" required>
+                    <option value="">Select</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select><br><br>
+    
+                <!-- Data Protection Policies -->
+                            <h2>Data Protection Policies</h2>
+                <label for="dataEncryption">Are there policies in place for data encryption?</label>
+                <select id="dataEncryption" name="dataEncryption" required>
+                    <option value="">Select</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select><br><br>
+    
+                <label for="accessControl">How is access control managed for sensitive data?</label>
+                <textarea id="accessControl" name="accessControl" required></textarea><br><br>
+    
+                <label for="dataBackupProcedures">Are data backup procedures in place?</label>
+                <select id="dataBackupProcedures" name="dataBackupProcedures" required>
+                    <option value="">Select</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select><br><br>
+    
+                <label for="incidentResponsePlans">Are there incident response plans for data breaches?</label>
+                <select id="incidentResponsePlans" name="incidentResponsePlans" required>
+                    <option value="">Select</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select><br><br>
+    
+                <!-- Vulnerability Assessment -->
+                <h2>Vulnerability Assessment</h2>
+                <label for="vulnerabilityAssessment">Has a recent vulnerability assessment been conducted?</label>
+                <select id="vulnerabilityAssessment" name="vulnerabilityAssessment" required>
+                    <option value="">Select</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select><br><br>
+    
+                <label for="securityPatches">Are security patches and updates regularly applied?</label>
+                <select id="securityPatches" name="securityPatches" required>
+                    <option value="">Select</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select><br><br>
+    
+                <label for="vulnerabilityPriority">How are vulnerabilities prioritized and addressed?</label>
+                <textarea id="vulnerabilityPriority" name="vulnerabilityPriority" required></textarea><br><br>
+    
+                <!-- External Threats -->
+                <h2>External Threats</h2>
+                <label for="externalThreats">What types of external threats are considered most concerning? (e.g., malware, phishing attacks, DDoS attacks)</label>
+                <textarea id="externalThreats" name="externalThreats" required></textarea><br><br>
+    
+                <label for="threatMonitoring">How are external threats monitored and mitigated?</label>
+                <textarea id="threatMonitoring" name="threatMonitoring" required></textarea><br><br>
+    
+                <label for="threatIntelligence">Is there a process for threat intelligence sharing?</label>
+                <select id="threatIntelligence" name="threatIntelligence" required>
+                    <option value="">Select</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select><br><br>
+    
+                <!-- Internal Threats -->
+                <h2>Internal Threats</h2>
+                <label for="insiderThreats">What measures are in place to prevent insider threats?</label>
+                <textarea id="insiderThreats" name="insiderThreats" required></textarea><br><br>
+    
+                <label for="employeeAccessMonitoring">How is employee access to sensitive data monitored?</label>
+                <textarea id="employeeAccessMonitoring" name="employeeAccessMonitoring" required></textarea><br><br>
+    
+                <label for="terminationProcedures">Are there policies in place for employee termination procedures to prevent data breaches?</label>
+                <select id="terminationProcedures" name="terminationProcedures" required>
+                    <option value="">Select</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select><br><br>
+    
+                <!-- Data Value and Impact Assessment -->
+                <h2>Data Value and Impact Assessment</h2>
+                <label for="dataValueClassification">How would you classify the value of your organisation's data? (e.g., critical, sensitive, confidential)</label>
+                <textarea id="dataValueClassification" name="dataValueClassification" required></textarea><br><br>
+    
+                <label for="dataBreachImpact">What would be the impact of a data breach on your organisation? (e.g., financial loss, reputational damage, legal consequences)</label>
+                <textarea id="dataBreachImpact" name="dataBreachImpact" required></textarea><br><br>
+    
+                <!-- Risk Management and Insurance -->
+                <h2>Risk Management and Insurance</h2>
+                <label for="cybersecurityInsurance">Does your organisation have cybersecurity insurance coverage?</label>
+                <select id="cybersecurityInsurance" name="cybersecurityInsurance" required>
+                    <option value="">Select</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select><br><br>
+    
+                <label for="insurancePremiums">How are insurance premiums determined?</label>
+                <textarea id="insurancePremiums" name="insurancePremiums" required></textarea><br><br>
+    
+                <label for="insuranceReassessment">Are there plans to reassess insurance coverage based on cybersecurity measures or data risk changes?</label>
+                <select id="insuranceReassessment" name="insuranceReassessment" required>
+                    <option value="">Select</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select><br><br>
+    
+                <!-- Third-Party Risk -->
+                <h2>Third-Party Risk</h2>
+                <label for="thirdPartyDataSharing">Does your organisation share sensitive data with third-party vendors or partners?</label>
+                <select id="thirdPartyDataSharing" name="thirdPartyDataSharing" required>
+                    <option value="">Select</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select><br><br>
+    
+                <label for="thirdPartySecurityMeasures">What measures are in place to ensure the security of data shared with third parties?</label>
+                <textarea id="thirdPartySecurityMeasures" name="thirdPartySecurityMeasures" required></textarea><br><br>
+    
+                <label for="thirdPartyCompliance">Are third-party vendors required to adhere to cybersecurity standards and policies?</label>
+                <select id="thirdPartyCompliance" name="thirdPartyCompliance" required>
+                    <option value="">Select</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select><br><br>
+    
+                <!-- BYOD (Bring Your Device) Policy -->
+                <h2>BYOD (Bring Your Device) Policy</h2>
+                <label for="byodPolicy">Does your organisation have a BYOD policy allowing employees to use personal devices for work?</label>
+                <select id="byodPolicy" name="byodPolicy" required>
+                    <option value="">Select</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select><br><br>
+    
+                <label for="deviceSecurity">How are personal devices secured to prevent data breaches or unauthorized access?</label>
+                <textarea id="deviceSecurity" name="deviceSecurity" required></textarea><br><br>
+    
+                <label for="deviceAccessRestrictions">Are there restrictions or guidelines for accessing sensitive data on personal devices?</label>
+                <select id="deviceAccessRestrictions" name="deviceAccessRestrictions" required>
+                    <option value="">Select</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select><br><br>
+    
+                <!-- Cloud Services Usage -->
+                <h2>Cloud Services Usage</h2>
+                <label for="cloudServiceUsage">Does your organisation use cloud services for data storage or processing?</label>
+                <select id="cloudServiceUsage" name="cloudServiceUsage" required>
+                    <option value="">Select</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select><br><br>
+    
+                <label for="cloudSecurityMeasures">How is data security ensured when using cloud services?</label>
+                <textarea id="cloudSecurityMeasures" name="cloudSecurityMeasures" required></textarea><br><br>
+    
+                <label for="cloudContracts">Are there contractual agreements with cloud service providers regarding data security and privacy?</label>
+                <select id="cloudContracts" name="cloudContracts" required>
+                    <option value="">Select</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select><br><br>
+    
+                <!-- Physical Security Measures -->
+                <h2>Physical Security Measures</h2>
+                <label for="physicalSecurityMeasures">What physical security measures are in place to protect data stored on-premises?</label>
+                <textarea id="physicalSecurityMeasures" name="physicalSecurityMeasures" required></textarea><br><br>
+    
+                <label for="dataCentreAccessControl">How is access to data centres, server rooms, and other physical infrastructure controlled?</label>
+                <textarea id="dataCentreAccessControl" name="dataCentreAccessControl" required></textarea><br><br>
+    
+                <label for="physicalAccessControls">Are surveillance cameras, alarms, and access controls used to prevent unauthorized access?</label>
+                <select id="physicalAccessControls" name="physicalAccessControls" required>
+                    <option value="">Select</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select><br><br>
+    
+                <!-- Incident Response Preparedness -->
+                <h2>Incident Response Preparedness</h2>
+                <label for="incidentResponsePlan">Does your organisation have an incident response plan in place for cybersecurity incidents?</label>
+                <select id="incidentResponsePlan" name="incidentResponsePlan" required>
+                    <option value="">Select</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select><br><br>
+    
+                <label for="incidentResponseDrills">How frequently are incident response drills conducted?</label>
+                <textarea id="incidentResponseDrills" name="incidentResponseDrills" required></textarea><br><br>
+    
+                <label for="incidentResponseTeam">Are there designated individuals or teams responsible for responding to cybersecurity incidents?</label>
+                <select id="incidentResponseTeam" name="incidentResponseTeam" required>
+                    <option value="">Select</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select><br><br>
+    
+                <!-- Regulatory Compliance -->
+                <h2>Regulatory Compliance</h2>
+                <label for="regulatoryRequirements">Does your organisation need to comply with specific regulatory requirements related to data protection (e.g., GDPR, HIPAA, PCI DSS)?</label>
+                <select id="regulatoryRequirements" name="regulatoryRequirements" required>
+                    <option value="">Select</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select><br><br>
+    
+                <label for="complianceMeasures">How does your organisation ensure compliance with applicable regulations?</label>
+                <textarea id="complianceMeasures" name="complianceMeasures" required></textarea><br><br>
+    
+                <label for="regulatoryAudits">Are there regular audits conducted to assess compliance with regulatory standards?</label>
+                <select id="regulatoryAudits" name="regulatoryAudits" required>
+                    <option value="">Select</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select><br><br>
+    
+                <!-- Employee Awareness and Training -->
+                <h2>Employee Awareness and Training</h2>
+                <label for="employeeTrainingPractices">Are employees trained on cybersecurity best practices and procedures?</label>
+                <select id="employeeTrainingPractices" name="employeeTrainingPractices" required>
+                    <option value="">Select</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select><br><br>
+    
+                <label for="trainingFrequency">How often are cybersecurity training sessions conducted?</label>
+                <textarea id="trainingFrequency" name="trainingFrequency" required></textarea><br><br>
+    
+                <label for="suspiciousActivityReporting">Is there a process for reporting suspicious activities or potential security incidents?</label>
+                <select id="suspiciousActivityReporting" name="suspiciousActivityReporting" required>
+                    <option value="">Select</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select><br><br>
+    
+                <!-- Data Retention and Disposal -->
+                <h2>Data Retention and Disposal</h2>
+                <label for="retentionDisposalPolicies">What policies are in place for data retention and disposal?</label>
+                <textarea id="retentionDisposalPolicies" name="retentionDisposalPolicies" required></textarea><br><br>
+    
+                <label for="dataDisposalProcedures">How is outdated or unnecessary data securely disposed of?</label>
+                <textarea id="dataDisposalProcedures" name="dataDisposalProcedures" required></textarea><br><br>
+    
+                <label for="secureDataErasure">Are there procedures for securely erasing data from storage devices before disposal or recycling?</label>
+                <select id="secureDataErasure" name="secureDataErasure" required>
+                    <option value="">Select</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select><br><br>
+    
+    
+                <h2>Additional Comments</h2>
+                <label for="additionalComments">Are there any other information or concerns related to data risk that you want to share?</label>
+                <textarea id="additionalComments" name="additionalComments"></textarea><br><br>
+    
+                <input type="submit" value="Submit">
+            </form>
+          </div>
       <div class="questionnaraire-inner">
         
         
