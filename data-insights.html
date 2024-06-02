@@ -23,15 +23,140 @@
         src="./public/image-5@2x.png"
         id="image6"
       />
+   <!-- Include Chart.js library -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
-      <img class="image-3-icon" alt="" src="./public/image-3@2x.png" />
+<!-- Chart Containers -->
+<div class="metric">
+    <h3>Trends Over Years</h3>
+    <!-- Container for the line chart -->
+    <div class="chart-container">
+        <canvas id="cybersecurity-attacks-chart"></canvas>
+    </div>
+</div>
+<div class="metric">
+    <h3>Cybersecurity Risk Distribution</h3>
+    <!-- Container for the bar chart -->
+    <div class="chart-container">
+        <canvas id="cybersecurity-risk-distribution-chart"></canvas>
+    </div>
+</div>
+<div class="metric">
+    <h3>Risk Factors Proportion</h3>
+    <!-- Container for the pie chart -->
+    <div class="chart-container">
+        <canvas id="risk-factors-proportion-chart"></canvas>
+    </div>
+</div>
 
-      <img
-        class="image-2-icon"
-        alt=""
-        src="./public/image-2@2x.png"
-        id="image2"
-      />
+<!-- JavaScript to generate charts -->
+<script>
+    // Placeholder data for the bar chart (distribution of cybersecurity risk scores among different organizations or industries)
+    var barChartData = {
+        labels: ['Organization A', 'Organization B', 'Organization C', 'Organization D', 'Organization E'],
+        datasets: [{
+            label: 'Cybersecurity Risk Score',
+            data: [80, 70, 60, 50, 40], // Placeholder data for risk scores
+            backgroundColor: 'rgba(255, 99, 132, 0.2)', // Red color with opacity
+            borderColor: 'rgba(255, 99, 132, 1)', // Red color
+            borderWidth: 1
+        }]
+    };
+
+    // Placeholder data for the pie chart (proportion of risk factors contributing to overall risk score)
+    var pieChartData = {
+        labels: ['Security Measures', 'Data Value', 'Vulnerability Assessment'],
+        datasets: [{
+            data: [40, 30, 30], // Placeholder data for proportions
+            backgroundColor: ['rgba(255, 99, 132, 0.2)', 'rgba(54, 162, 235, 0.2)', 'rgba(255, 206, 86, 0.2)'], // Colors with opacity
+            borderColor: ['rgba(255, 99, 132, 1)', 'rgba(54, 162, 235, 1)', 'rgba(255, 206, 86, 1)'], // Colors
+            borderWidth: 1
+        }]
+    };
+
+    // Get the bar chart container
+    var barCtx = document.getElementById('cybersecurity-risk-distribution-chart').getContext('2d');
+
+    // Create the bar chart
+    var barChart = new Chart(barCtx, {
+        type: 'bar',
+        data: barChartData,
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            scales: {
+                y: {
+                    beginAtZero: true
+                }
+            }
+        }
+    });
+
+    // Get the pie chart container
+    var pieCtx = document.getElementById('risk-factors-proportion-chart').getContext('2d');
+
+    // Create the pie chart
+    var pieChart = new Chart(pieCtx, {
+        type: 'pie',
+        data: pieChartData,
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+        }
+    });
+
+    // Placeholder data for the line chart (trends in risk levels over time)
+    var lineChartData = {
+        labels: ['2010', '2011', '2012', '2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020', '2021'],
+        datasets: [{
+            label: 'Cybersecurity Attacks',
+            data: [50, 60, 70, 80, 90, 100, 110, 120, 130, 140, 150, 160], // Placeholder data for attacks per year
+            borderColor: 'blue',
+            fill: false
+        }]
+    };
+
+    // Options for the line chart
+    var lineChartOptions = {
+        responsive: true,
+        maintainAspectRatio: false,
+        tooltips: {
+            mode: 'index',
+            intersect: false
+        },
+        hover: {
+            mode: 'nearest',
+            intersect: true
+        },
+        scales: {
+            x: {
+                display: true,
+                title: {
+                    display: true,
+                    text: 'Year'
+                }
+            },
+            y: {
+                display: true,
+                title: {
+                    display: true,
+                    text: 'Number of Attacks'
+                }
+            }
+        }
+    };
+
+    // Get the line chart container
+    var lineCtx = document.getElementById('cybersecurity-attacks-chart').getContext('2d');
+
+    // Create the line chart
+    var lineChart = new Chart(lineCtx, {
+        type: 'line',
+        data: lineChartData,
+        options: lineChartOptions
+    });
+</script>
+
 
       <div class="data-insights-inner">
         <div class="rectangle-frame">
@@ -99,37 +224,8 @@
           </div>
         </div>
       </div>
-      <div class="information-about-the">Information about the grpha</div>
-      <div class="discover-intriguing-insights-container">
-        <p class="discover-intriguing-insights">
-          Discover intriguing insights with us!
-        </p>
-      </div>
-      <div class="information-about-the1">Information about the grpha</div>
-      <div class="insightful-visuals-strong">
-        Insightful visuals, strong security, smart strategies!
-      </div>
-      <div class="blah-blah-blah-container">
-        <p class="discover-intriguing-insights">Blah blah blah...........</p>
-        <p class="discover-intriguing-insights">......</p>
-        <p class="discover-intriguing-insights">...</p>
-        <p class="discover-intriguing-insights">....</p>
-        <p class="contact-us2">....</p>
-      </div>
-      <div class="blah-blah-blah-container1">
-        <p class="discover-intriguing-insights">Blah blah blah...........</p>
-        <p class="discover-intriguing-insights">......</p>
-        <p class="discover-intriguing-insights">...</p>
-        <p class="discover-intriguing-insights">....</p>
-        <p class="contact-us2">....</p>
-      </div>
-      <div class="blah-blah-blah-container2">
-        <p class="discover-intriguing-insights">Blah blah blah...........</p>
-        <p class="discover-intriguing-insights">......</p>
-        <p class="discover-intriguing-insights">...</p>
-        <p class="discover-intriguing-insights">....</p>
-        <p class="contact-us2">....</p>
-      </div>
+     
+      
       <div class="rectangle-parent2">
         <div class="group-child6"></div>
         <div class="group-parent2">

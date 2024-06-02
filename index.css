@@ -1,54 +1,64 @@
 .sign-in-page-child {
   position: absolute;
-  top: 335px;
-  left: 260px;
+  height: 55.68%;
+  width: 60.22%;
+  top: 19.13%;
+  right: 21.15%;
+  bottom: 25.19%;
+  left: 18.64%;
   background-color: rgba(217, 217, 217, 0.11);
-  width: 840px;
-  height: 975px;
 }
 .sign-in-page-item {
   border: 0;
   outline: 0;
   background-color: #ebf2fb;
   position: absolute;
-  top: 899px;
-  left: 357px;
-  width: 626px;
-  height: 145px;
+  height: 8.28%;
+  width: 44.87%;
+  top: 51.34%;
+  right: 29.53%;
+  bottom: 40.38%;
+  left: 25.59%;
 }
 .image-6-icon {
   position: absolute;
+  height: 8.34%;
+  width: 33.55%;
   top: 0;
+  right: 66.45%;
+  bottom: 91.66%;
   left: 0;
-  width: 468px;
-  height: 146px;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
   object-fit: cover;
 }
 .enter-your-credentials,
 .welcome-back {
   position: absolute;
-  top: 381px;
-  left: 295px;
+  height: 6.51%;
+  width: 55.05%;
+  top: 21.76%;
+  left: 21.15%;
   display: inline-block;
-  width: 768px;
-  height: 114px;
 }
 .enter-your-credentials {
-  top: 541px;
-  left: 368px;
+  height: 2.8%;
+  width: 42.51%;
+  top: 30.9%;
+  left: 26.38%;
   font-size: var(--font-size-21xl);
   text-align: left;
-  width: 593px;
-  height: 49px;
 }
-.email-address,
-.rectangle-div {
+.group-child {
   position: absolute;
+  height: 100%;
+  width: 100%;
   top: 0;
+  right: 0;
+  bottom: 0;
   left: 0;
   background-color: #ebf1fb;
-  width: 626px;
-  height: 146px;
 }
 .email-address {
   border: 0;
@@ -57,25 +67,23 @@
   font-family: var(--font-inria-serif);
   font-size: var(--font-size-21xl);
   background-color: transparent;
-  top: 43px;
+  position: absolute;
+  height: 45.21%;
+  width: 98.88%;
+  top: 29.45%;
+  left: 0;
   font-weight: 700;
   color: var(--color-black);
   text-align: left;
-  width: 619px;
-  height: 66px;
 }
-.rectangle-group {
+.rectangle-parent {
   position: absolute;
-  top: 670px;
-  left: 357px;
-  width: 626px;
-  height: 146px;
-}
-.password,
-.password-wrapper {
-  position: absolute;
-  width: 612px;
-  height: 64px;
+  height: 8.34%;
+  width: 44.87%;
+  top: 38.26%;
+  right: 29.53%;
+  bottom: 53.4%;
+  left: 25.59%;
 }
 .password {
   border: 0;
@@ -84,53 +92,65 @@
   font-family: var(--font-inria-serif);
   font-size: var(--font-size-21xl);
   background-color: transparent;
+  position: absolute;
+  height: 100%;
+  width: 100%;
   top: 0;
   left: 0;
   font-weight: 700;
   color: var(--color-black);
   text-align: left;
 }
+.group-item,
 .password-wrapper {
-  top: 942px;
-  left: 360px;
-}
-.group-child1,
-.sign-in-page-inner {
   position: absolute;
-  width: 288px;
-  height: 86px;
+  height: 3.66%;
+  width: 43.87%;
+  top: 53.8%;
+  right: 30.32%;
+  bottom: 42.55%;
+  left: 25.81%;
 }
-.group-child1 {
+.group-item {
   cursor: pointer;
   border: 0;
   padding: 0;
   background-color: var(--color-black);
+  height: 100%;
+  width: 100%;
   top: 0;
+  right: 0;
+  bottom: 0;
   left: 0;
 }
 .sign-in-page-inner {
-  top: 1167px;
-  left: 377px;
+  position: absolute;
+  height: 4.91%;
+  width: 20.65%;
+  top: 66.65%;
+  right: 52.33%;
+  bottom: 28.44%;
+  left: 27.03%;
 }
-.sign-in-page,
-.sign-in2 {
+.sign-in,
+.sign-in-page {
   font-family: var(--font-inria-serif);
 }
-.sign-in2 {
+.sign-in {
   cursor: pointer;
   border: 0;
   padding: 0;
   background-color: transparent;
   position: absolute;
-  top: 1186px;
-  left: 414px;
+  height: 2.51%;
+  width: 11.11%;
+  top: 67.73%;
+  left: 29.68%;
   font-size: var(--font-size-21xl);
   font-weight: 700;
   color: #fcfcfc;
   text-align: left;
   display: inline-block;
-  width: 155px;
-  height: 44px;
 }
 .sign-in-page {
   width: 100%;
